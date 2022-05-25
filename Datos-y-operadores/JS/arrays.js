@@ -1,4 +1,4 @@
-
+// Mezclar dos arrays
 let numeroEntradas = prompt('Indica el tamaño del array');
 const array1 = [];
 let array2 = [];

@@ -1,7 +1,6 @@
 console.log('Funciona');
 
-<<<<<<< Updated upstream
-=======
+// Metodo burbuja
 let numeros = [5,2,7,9,3,1,0,4,6];
 console.log(numeros);
 let i, n, j, aux;
@@ -34,4 +33,3 @@ for(let i = 0; i < (array.length - 1); i++){
 }
 
 console.log(array)
->>>>>>> Stashed changes
