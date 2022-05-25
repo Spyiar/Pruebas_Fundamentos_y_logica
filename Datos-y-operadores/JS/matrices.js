@@ -70,9 +70,9 @@ let countriesSet = new Set();
 let countriesArray = ['Panama', 'Egipto', 'Argentina'];
 
 //inicializacion con Map
-countriesMap.set('Pais1', 'Panama');
-countriesMap.set('Pais2', 'Egipto');
-countriesMap.set('Pais3', 'Argentina');
+countriesMap.set(1 , 'Panama');
+countriesMap.set(2 , 'Egipto');
+countriesMap.set(3 , 'Argentina');
 console.log(countriesMap);
 
 //inicializacion con Set
@@ -82,13 +82,13 @@ countriesSet.add('Argentina');
 console.log(countriesSet);
 
 //Ejercicio Map
-countriesMap.set('Pais4', 'Francia');
+countriesMap.set(4, 'Francia');
 console.log(countriesMap);
-countriesMap.delete('Pais2');
+countriesMap.delete(2);
 console.log(countriesMap);
-countriesMap.set('Pais5', 'Australia');
+countriesMap.set(5, 'Australia');
 console.log(countriesMap);
-countriesMap.set('Pais6', 'Brasil');
+countriesMap.set(6, 'Brasil');
 console.log(countriesMap);
 
 //Ejercicio Set
