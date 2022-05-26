@@ -90,6 +90,8 @@ countriesMap.set(5, 'Australia');
 console.log(countriesMap);
 countriesMap.set(6, 'Brasil');
 console.log(countriesMap);
+let mapOrdenado = new Map([...countriesMap.entries()].sort());
+console.log('Map ordenado'+mapOrdenado);
 
 //Ejercicio Set
 countriesSet.add('Francia');
@@ -110,4 +112,4 @@ console.log(countriesArray);
 countriesArray.push('Brasil');
 console.log(countriesArray);
 countriesArray.sort();
-console.log(countriesArray);
+console.log(countriesArray);    
