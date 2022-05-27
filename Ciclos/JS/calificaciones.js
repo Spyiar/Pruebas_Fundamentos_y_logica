@@ -1,12 +1,17 @@
-let calificaciones = [];
+//Ejercicio #1
 
+let calificaciones = [];
 alert('Digita calificaciones una por una, 0 para finalizar');
 
 let nota;
 
 do{
-    nota = prompt('Ingresa una nota')
-    if(nota > 0){
+    nota = prompt('Ingresa una nota');
+
+    if(nota == '' || nota == null || isNaN(nota) || nota <= 0){
+        alert('El valor es nulo o invalido');
+        break;
+    }else{
         calificaciones.push(nota);
     }
 }while(nota != 0);
@@ -23,6 +28,7 @@ alert(`Las calificaciones son: ${calificaciones}
 La nota mas alta es: ${calificaionMasAlta}`)
 console.log(calificaciones);
 console.log(calificaionMasAlta);
+
 /* 
 let coleccionM = new Map();
 let notaM;

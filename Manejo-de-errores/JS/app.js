@@ -1,63 +1,34 @@
-/* let numero;
+let number;
 try{
-    numero = parseInt(prompt('Digita un numero'));
+    number = parseInt(prompt('Digita un numero'));
 }catch(err){
     console.log(err)
 }
 
-let res = Math.pow(numero,2);
+let respuesta = Math.pow(number,2);
 console.log('Valor incorrecto, solo se aceptan numeros')
-console.log(res); */
+console.log(respuesta);
 
 
-
-//Forma 1
-/* for(let i = 0; i < numeroFactorial; i++){
-    if(!isNaN(numeroFactorial)){
-        if(numeroFactorial < 0){
-            console.log('El valor ingresado debe ser mayor a 0');
-            break;
-        }
-        resultado *= (i+1); 
-        console.log(resultado);
-    }else{
-        console.log('El dato ingresado no es un numero');
-    }
-} */
-
-//Forma 2
-
+//Ejercicio #Final
 function factorial(){
-    let numeroFactorial;
-    let resultado = 1;
+    let numero = prompt('Digite el numero factorial');
+    let res = 1;
 
-
-    try{
-        numeroFactorial = parseInt(prompt('Agregar numero factorial'));
-        console.log(numeroFactorial);
-    }catch(err){
-        console.log('Valor incorrecto, solo se aceptan numeros');
-        factorial();
-    }
-    try{
-        if(!isNaN(numeroFactorial)){
-            for(let i = 0; i < numeroFactorial; i++){
-            resultado *= (i+1); 
-            console.log(resultado);
-            }
-        }else if(numeroFactorial == 0){
-            resultado = 1;
-            console.log(resultado);
-        }else if(numeroFactorial < 0){
-            console.log('No se aceptan numeros negativos');
+    try {
+        if(numero == '' || numero == null || isNaN(numero) || numero <= 0){
+            alert('El valor es nulo o invalido');
+            return;
         }else{
-            console.log('Debes ingresar un valor numerico');
+            for(let i = 0; i < numero; i++){
+                res *= (i+1); 
+                console.log(res);
+            }
+            factorial();
         }
-    }catch(err){
-        console.log('Valor incorrecto, solo se aceptan numeros');
+    } catch (error) {
+        console.log('Error: '+error);
     }
-    factorial();
 }
+
 factorial();
-
-
